@@ -95,3 +95,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Medical datasets used in this project
 - Streamlit framework
 - TensorFlow/Keras for machine learning implementation
+
+## Dataset resources
+
+- [Medical Datasets](https://www.kaggle.com/datasets/noorsaeed/medicine-recommendation-system-dataset)

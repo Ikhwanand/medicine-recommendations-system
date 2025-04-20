@@ -401,6 +401,25 @@ wheels = [
 ]
 
 [[package]]
+name = "medicine-recommendation-system"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "plotly" },
+    { name = "scikit-learn" },
+    { name = "streamlit" },
+    { name = "tensorflow" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "plotly", specifier = ">=6.0.1" },
+    { name = "scikit-learn", specifier = ">=1.6.1" },
+    { name = "streamlit", specifier = ">=1.44.1" },
+    { name = "tensorflow", specifier = ">=2.19.0" },
+]
+
+[[package]]
 name = "ml-dtypes"
 version = "0.5.1"
 source = { registry = "https://pypi.org/simple" }
@@ -623,25 +642,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/c7/cc/e41b5f697ae403f0b50e47b7af2e36642a193085f553bf7cc1169362873a/plotly-6.0.1.tar.gz", hash = "sha256:dd8400229872b6e3c964b099be699f8d00c489a974f2cfccfad5e8240873366b", size = 8094643 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/02/65/ad2bc85f7377f5cfba5d4466d5474423a3fb7f6a97fd807c06f92dd3e721/plotly-6.0.1-py3-none-any.whl", hash = "sha256:4714db20fea57a435692c548a4eb4fae454f7daddf15f8d8ba7e1045681d7768", size = 14805757 },
-]
-
-[[package]]
-name = "project"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "plotly" },
-    { name = "scikit-learn" },
-    { name = "streamlit" },
-    { name = "tensorflow" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "plotly", specifier = ">=6.0.1" },
-    { name = "scikit-learn", specifier = ">=1.6.1" },
-    { name = "streamlit", specifier = ">=1.44.1" },
-    { name = "tensorflow", specifier = ">=2.19.0" },
 ]
 
 [[package]]

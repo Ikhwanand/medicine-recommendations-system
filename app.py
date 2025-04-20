@@ -86,8 +86,8 @@ def get_recommendations(disease, data):
         'medications': med_list,
         'diet': diet_list,
         'precautions': precaution.iloc[0, 1:].dropna().tolist() if not precaution.empty else [],
-        'description': description.iloc[0, 1] if not description.empty else "No description available",
-        'workout': workout.iloc[0, 1:].dropna().tolist()[-1] if not workout.empty else []
+        'description': description['Description'].values[0] if not description.empty else "No description available",
+        'workout': workout['workout'].dropna().tolist() if not workout.empty else []
     }
 
 
@@ -154,7 +154,8 @@ def main():
             
             st.subheader('Recommended Workouts')
             if recommendations['workout']:
-                st.write(f'- {recommendations["workout"]}')
+                for workout in recommendations['workout']:
+                    st.write(f'- {workout}')
             else:
                 st.write('No specific workout recommendations found.')
 

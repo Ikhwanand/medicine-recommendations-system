@@ -1,5 +1,5 @@
 [project]
-name = "medicine-recommendation-system"
+name = "project"
 version = "0.1.0"
 description = "A machine learning-based medicine recommendation system"
 readme = "README.md"

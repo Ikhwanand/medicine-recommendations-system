@@ -1,4 +1,4 @@
-[project]
+[medicine-recommendatinos-system]
 name = "medicine-recommendations-system"
 version = "0.1.0"
 description = "A machine learning-based medicine recommendation system"
